@@ -1,0 +1,8 @@
+C:\Users\ur2q\Projects\ContactsAppWithSqlServer\ContactsApp\ContactsLibrary\bin\Debug\ContactsLibrary.dll
+C:\Users\ur2q\Projects\ContactsAppWithSqlServer\ContactsApp\ContactsLibrary\bin\Debug\ContactsLibrary.pdb
+C:\Users\ur2q\Projects\ContactsAppWithSqlServer\ContactsApp\ContactsLibrary\bin\Debug\Dapper.dll
+C:\Users\ur2q\Projects\ContactsAppWithSqlServer\ContactsApp\ContactsLibrary\bin\Debug\Dapper.xml
+C:\Users\ur2q\Projects\ContactsAppWithSqlServer\ContactsApp\ContactsLibrary\obj\Debug\ContactsLibrary.csprojResolveAssemblyReference.cache
+C:\Users\ur2q\Projects\ContactsAppWithSqlServer\ContactsApp\ContactsLibrary\obj\Debug\ContactsLibrary.csproj.CoreCompileInputs.cache
+C:\Users\ur2q\Projects\ContactsAppWithSqlServer\ContactsApp\ContactsLibrary\obj\Debug\ContactsLibrary.dll
+C:\Users\ur2q\Projects\ContactsAppWithSqlServer\ContactsApp\ContactsLibrary\obj\Debug\ContactsLibrary.pdb
