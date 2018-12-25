@@ -27,5 +27,17 @@ namespace ContactsLibrary
                 return output;
             }
         }
+        public void InsertContact(string firstName, string lastName, string phoneNumber)
+        {
+            using (IDbConnection connection = new System.Data.SqlClient.SqlConnection(ConfigHelper.CnnString("ContactsApp")))
+            {
+                PersonModel newContact = new PersonModel
+                { FirstName = firstName, LastName = lastName, PhoneNumber = phoneNumber};
+
+                connection.Execute("dbo.spInsertContact @FirstName, @LastName, @PhoneNumber", newContact);
+            }
+
+        }
+
     }
 }

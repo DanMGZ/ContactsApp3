@@ -47,5 +47,19 @@ namespace ContactsUI
             searchResultsListBox.DataSource = contactsReturned;
             searchResultsListBox.DisplayMember = "FullInfo";
         }
+
+        private void createNewContactButton_Click(object sender, EventArgs e)
+        {
+            // TODO - determine whether arg should be keyword this
+            CreateNewContactForm newContactForm = new CreateNewContactForm();
+            newContactForm.Show();
+        }
+
+        private void clearSearchResultsButton_Click(object sender, EventArgs e)
+        {
+            contactsReturned = null;
+
+            UpdateBinding();
+        }
     }
 }

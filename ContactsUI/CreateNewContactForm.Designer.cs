@@ -107,6 +107,7 @@
             this.saveNewContactButton.TabIndex = 8;
             this.saveNewContactButton.Text = "Save New Contact";
             this.saveNewContactButton.UseVisualStyleBackColor = true;
+            this.saveNewContactButton.Click += new System.EventHandler(this.saveNewContactButton_Click);
             // 
             // CreateNewContactForm
             // 

@@ -76,6 +76,7 @@
             this.clearSearchResultsButton.TabIndex = 3;
             this.clearSearchResultsButton.Text = "Clear Results";
             this.clearSearchResultsButton.UseVisualStyleBackColor = true;
+            this.clearSearchResultsButton.Click += new System.EventHandler(this.clearSearchResultsButton_Click);
             // 
             // lastNameSearchTextBox
             // 
@@ -104,6 +105,7 @@
             this.createNewContactButton.TabIndex = 6;
             this.createNewContactButton.Text = "Create New Contact";
             this.createNewContactButton.UseVisualStyleBackColor = true;
+            this.createNewContactButton.Click += new System.EventHandler(this.createNewContactButton_Click);
             // 
             // ContactsLookupForm
             // 
