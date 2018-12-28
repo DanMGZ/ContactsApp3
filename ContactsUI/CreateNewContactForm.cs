@@ -20,13 +20,43 @@ namespace ContactsUI
 
         private void saveNewContactButton_Click(object sender, EventArgs e)
         {
-            DataAccess db = new DataAccess();
+            if (ValidateForm())
+            {
+                DataAccess db = new DataAccess();
 
-            db.InsertContact(newFirstNameTextBox.Text, newLastNameTextBox.Text, newPhoneNumberTextBox.Text);
+                db.InsertContact(newFirstNameTextBox.Text, newLastNameTextBox.Text, newPhoneNumberTextBox.Text);
 
-            newFirstNameTextBox.Text = "";
-            newLastNameTextBox.Text = null;
-            newPhoneNumberTextBox.Text = "";
+                newFirstNameTextBox.Text = "";
+                newLastNameTextBox.Text = "";
+                newPhoneNumberTextBox.Text = "";
+            }
+            else
+            {
+                // Consider creating a class of standard messages
+                MessageBox.Show("Please fill out all fields.");
+            }
+        }
+
+        //should we have a validate form class instead?
+        private bool ValidateForm()
+        {
+            bool output = true;
+
+            if (string.IsNullOrWhiteSpace(newFirstNameTextBox.Text))
+            {
+                output = false;
+            }
+
+            if (string.IsNullOrWhiteSpace(newLastNameTextBox.Text))
+            {
+                output = false;
+            }
+
+            if (string.IsNullOrWhiteSpace(newPhoneNumberTextBox.Text))
+            {
+                output = false;
+            }
+            return output;
         }
     }
 }
