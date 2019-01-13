@@ -20,7 +20,6 @@ C:\Users\ur2q\Projects\ContactsAppWithSqlServer\WithLocalGitOnlyMinimalWorkingCo
 C:\Users\ur2q\Projects\ContactsAppWithSqlServer\WithLocalGitOnlyMinimalWorkingContactsApp\ContactsUI\bin\Debug\Dapper.dll
 C:\Users\ur2q\Projects\ContactsAppWithSqlServer\WithLocalGitOnlyMinimalWorkingContactsApp\ContactsUI\bin\Debug\ContactsLibrary.pdb
 C:\Users\ur2q\Projects\ContactsAppWithSqlServer\WithLocalGitOnlyMinimalWorkingContactsApp\ContactsUI\bin\Debug\Dapper.xml
-C:\Users\ur2q\Projects\ContactsAppWithSqlServer\WithLocalGitOnlyMinimalWorkingContactsApp\ContactsUI\obj\Debug\ContactsUI.csprojResolveAssemblyReference.cache
 C:\Users\ur2q\Projects\ContactsAppWithSqlServer\WithLocalGitOnlyMinimalWorkingContactsApp\ContactsUI\obj\Debug\ContactsUI.ContactsLookupForm.resources
 C:\Users\ur2q\Projects\ContactsAppWithSqlServer\WithLocalGitOnlyMinimalWorkingContactsApp\ContactsUI\obj\Debug\ContactsUI.CreateNewContactForm.resources
 C:\Users\ur2q\Projects\ContactsAppWithSqlServer\WithLocalGitOnlyMinimalWorkingContactsApp\ContactsUI\obj\Debug\ContactsUI.Properties.Resources.resources
@@ -28,3 +27,5 @@ C:\Users\ur2q\Projects\ContactsAppWithSqlServer\WithLocalGitOnlyMinimalWorkingCo
 C:\Users\ur2q\Projects\ContactsAppWithSqlServer\WithLocalGitOnlyMinimalWorkingContactsApp\ContactsUI\obj\Debug\ContactsUI.csproj.CoreCompileInputs.cache
 C:\Users\ur2q\Projects\ContactsAppWithSqlServer\WithLocalGitOnlyMinimalWorkingContactsApp\ContactsUI\obj\Debug\ContactsUI.exe
 C:\Users\ur2q\Projects\ContactsAppWithSqlServer\WithLocalGitOnlyMinimalWorkingContactsApp\ContactsUI\obj\Debug\ContactsUI.pdb
+C:\Users\ur2q\Projects\ContactsAppWithSqlServer\WithLocalGitOnlyMinimalWorkingContactsApp\ContactsUI\obj\Debug\ContactsUI.csprojAssemblyReference.cache
+C:\Users\ur2q\Projects\ContactsAppWithSqlServer\WithLocalGitOnlyMinimalWorkingContactsApp\ContactsUI\obj\Debug\ContactsUI.csproj.CopyComplete

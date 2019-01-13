@@ -23,18 +23,39 @@ namespace ContactsLibrary
             using (IDbConnection connection = new System.Data.SqlClient.SqlConnection(ConfigHelper.CnnString("ContactsApp")))
             {
                 // TODO - understand this
+                // .Query is from Dapper I think and you use it when you want something back
                 var output = connection.Query<PersonModel>("dbo.spGetContactsByLastName @LastName", new { LastName = lastName }).ToList();
                 return output;
             }
         }
-        public void InsertContact(string firstName, string lastName, string phoneNumber)
+
+        //public void InsertContact(string firstName, string lastName, string phoneNumber)
+        public void InsertContact(PersonModel person)
         {
             using (IDbConnection connection = new System.Data.SqlClient.SqlConnection(ConfigHelper.CnnString("ContactsApp")))
             {
-                PersonModel newContact = new PersonModel
-                { FirstName = firstName, LastName = lastName, PhoneNumber = phoneNumber};
+                //   @FirstName nvarchar(50),
+                //@LastName nvarchar(50),
+                //@PhoneNumber varchar(25),
+                //@ID int = 0 output
+                // TODO - change this code so that we get back an ID for new entry
+                //PersonModel newContact = new PersonModel
+                //{ FirstName = firstName, LastName = lastName, PhoneNumber = phoneNumber };
 
-                connection.Execute("dbo.spInsertContact @FirstName, @LastName, @PhoneNumber", newContact);
+                //connection.Execute("dbo.spInsertContact @FirstName, @LastName, @PhoneNumber", newContact);
+
+                // have to use DynamicParameters() to get back id
+                // could use DynamicParameters instead of var
+                var listOfVariables = new DynamicParameters();
+                listOfVariables.Add("@FirstName", person.FirstName);
+                listOfVariables.Add("@LastName", person.LastName);
+                listOfVariables.Add("@PhoneNumber", person.PhoneNumber);
+                listOfVariables.Add("@ID", 0, dbType: DbType.Int32, direction: ParameterDirection.Output);
+
+                connection.Execute("dbo.spInsertContact", listOfVariables, commandType: CommandType.StoredProcedure);
+
+                person.ID = listOfVariables.Get<int>("@ID");
+
             }
 
         }

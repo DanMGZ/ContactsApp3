@@ -41,7 +41,7 @@
             // newContactHeaderLabel
             // 
             this.newContactHeaderLabel.AutoSize = true;
-            this.newContactHeaderLabel.Font = new System.Drawing.Font("Segoe UI", 27.75F, System.Drawing.FontStyle.Underline, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.newContactHeaderLabel.Font = new System.Drawing.Font("Segoe UI", 27.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.newContactHeaderLabel.ForeColor = System.Drawing.SystemColors.MenuHighlight;
             this.newContactHeaderLabel.Location = new System.Drawing.Point(13, 9);
             this.newContactHeaderLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);

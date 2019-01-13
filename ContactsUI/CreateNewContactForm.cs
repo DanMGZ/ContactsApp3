@@ -24,11 +24,21 @@ namespace ContactsUI
             {
                 DataAccess db = new DataAccess();
 
-                db.InsertContact(newFirstNameTextBox.Text, newLastNameTextBox.Text, newPhoneNumberTextBox.Text);
+                // could create a PersonModel instance and pass that to Insert Contact
+                // actually I have to so I can store the id output with person.ID = listOfVariables.Get<int>("@ID") over there
+                PersonModel person = new PersonModel();
+                person.FirstName = newFirstNameTextBox.Text;
+                person.LastName = newLastNameTextBox.Text;
+                person.PhoneNumber = newPhoneNumberTextBox.Text;
+
+                //db.InsertContact(newFirstNameTextBox.Text, newLastNameTextBox.Text, newPhoneNumberTextBox.Text);
+                db.InsertContact(person);
 
                 newFirstNameTextBox.Text = "";
                 newLastNameTextBox.Text = "";
                 newPhoneNumberTextBox.Text = "";
+
+                MessageBox.Show($"Your new contact's ID is {person.ID}");
             }
             else
             {

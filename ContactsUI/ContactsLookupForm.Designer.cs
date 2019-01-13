@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.label1 = new System.Windows.Forms.Label();
+            this.headerLabel = new System.Windows.Forms.Label();
             this.lastNameLookupLabel = new System.Windows.Forms.Label();
             this.searchResultsListBox = new System.Windows.Forms.ListBox();
             this.clearSearchResultsButton = new System.Windows.Forms.Button();
@@ -37,17 +37,17 @@
             this.createNewContactButton = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
-            // label1
+            // headerLabel
             // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Segoe UI", 27.75F, System.Drawing.FontStyle.Underline, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.ForeColor = System.Drawing.SystemColors.MenuHighlight;
-            this.label1.Location = new System.Drawing.Point(22, 9);
-            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(282, 50);
-            this.label1.TabIndex = 0;
-            this.label1.Text = "Contact Lookup";
+            this.headerLabel.AutoSize = true;
+            this.headerLabel.Font = new System.Drawing.Font("Segoe UI", 27.75F);
+            this.headerLabel.ForeColor = System.Drawing.SystemColors.MenuHighlight;
+            this.headerLabel.Location = new System.Drawing.Point(22, 9);
+            this.headerLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.headerLabel.Name = "headerLabel";
+            this.headerLabel.Size = new System.Drawing.Size(282, 50);
+            this.headerLabel.TabIndex = 0;
+            this.headerLabel.Text = "Contact Lookup";
             // 
             // lastNameLookupLabel
             // 
@@ -119,7 +119,7 @@
             this.Controls.Add(this.clearSearchResultsButton);
             this.Controls.Add(this.searchResultsListBox);
             this.Controls.Add(this.lastNameLookupLabel);
-            this.Controls.Add(this.label1);
+            this.Controls.Add(this.headerLabel);
             this.Font = new System.Drawing.Font("Segoe UI", 21.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Margin = new System.Windows.Forms.Padding(8, 9, 8, 9);
             this.Name = "ContactsLookupForm";
@@ -131,7 +131,7 @@
 
         #endregion
 
-        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label headerLabel;
         private System.Windows.Forms.Label lastNameLookupLabel;
         private System.Windows.Forms.ListBox searchResultsListBox;
         private System.Windows.Forms.Button clearSearchResultsButton;

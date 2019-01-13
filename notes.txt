@@ -1,0 +1,24 @@
+remove underlining on main form since it looks like a link
+
+add @ID and the select @ID the following code to spInsertContact:
+
+ALTER PROCEDURE [dbo].[spInsertContact] 
+	@FirstName nvarchar(50),
+	@LastName nvarchar(50),
+	@PhoneNumber varchar(25),
+	@ID int = 0 output
+AS
+BEGIN
+	SET NOCOUNT ON;
+
+    insert into dbo.Contacts (FirstName, LastName, PhoneNumber)
+	values (@FirstName, @LastName, @PhoneNumber);
+
+	select @ID = SCOPE_IDENTITY();
+
+END
+
+
+need to change my DataAccess.InsertContact() method in order to work with the altered stored proc
+
+todo - understand the syntax in my using statement for GetContacts() in DataAccess

@@ -44,6 +44,7 @@ namespace ContactsUI
         // a separate method just for loading the searchResultsListBox
         private void UpdateBinding()
         {
+            // without quotes, FullInfo doesn't exist in the current context
             searchResultsListBox.DataSource = contactsReturned;
             searchResultsListBox.DisplayMember = "FullInfo";
         }
